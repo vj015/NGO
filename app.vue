@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h1 class="font-mono">{{ "Hello" }}</h1>
-  </div>
+  <MainPage />
 </template>
 <script setup lang="ts">
 useSeoMeta({
