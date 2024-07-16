@@ -1,7 +1,11 @@
 <template>
-  <MainPage />
+  <NavBar />
+  <NuxtPage />
+  <Footer />
 </template>
 <script setup lang="ts">
+import NavBar from "../NGO/components/Navbar.vue";
+import Footer from "../NGO/components/Footer.vue";
 useSeoMeta({
   title: "Asha Ki Kiran",
   ogTitle: "Asha Ki Kiran",
