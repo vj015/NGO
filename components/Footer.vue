@@ -22,9 +22,7 @@
         <p class="font-mono text-xl">
           {{
             "Asha ki Kiran Foundation is an award-winning organization working hard to address the issue of Child Education of BPL in India. "
-          }}<span class="inline-block text-stone-500">{{
-            "Read more...."
-          }}</span>
+          }}<span class="inline-block custom-red">{{ "Read more...." }}</span>
         </p>
       </div>
       <div class="flex flex-col items-center my-4">
@@ -37,13 +35,13 @@
         <div class="flex flex-row items-center flex-wrap">
           <button
             href="#"
-            class="w-auto px-4 py-2 m-2 md:text-right text-red-500 rounded font-mono text-xs md:text-xl border-2 border-red-500 hover:text-white hover:bg-red-500"
+            class="w-auto px-4 py-2 m-2 md:text-right text-red-500 rounded font-mono text-xs md:text-xl border-2 border-red-600 hover:text-white hover:bg-red-600"
           >
             Join us
           </button>
           <button
             href="#"
-            class="w-auto px-4 py-2 m-2 md:text-right text-white bg-red-500 rounded font-mono text-xs md:text-xl border-2 border-red-500 hover:text-red-500 hover:bg-slate-900"
+            class="w-auto px-4 py-2 m-2 md:text-right text-white bg-red-600 rounded font-mono text-xs md:text-xl border-2 border-red-600 hover:text-red-600 hover:bg-slate-900"
           >
             Donate
           </button>
@@ -78,5 +76,8 @@ import copyright from "/components/icons/copyright.vue";
   font-weight: 400;
   color: #fe0002 !important;
   font-size: 3em !important;
+}
+.custom-red {
+  color: #fe0002;
 }
 </style>
