@@ -1,7 +1,7 @@
 <template>
   <NavBar />
-  <!-- <NuxtPage />
-  <Footer /> -->
+  <NuxtPage />
+  <Footer />
 </template>
 <script setup lang="ts">
 import NavBar from "../NGO/components/Navbar.vue";
