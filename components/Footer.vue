@@ -76,7 +76,7 @@ import copyright from "/components/icons/copyright.vue";
   font-family: "Sacramento", cursive;
   text-transform: none;
   font-weight: 400;
-  color: #41b0bf !important;
+  color: #fe0002 !important;
   font-size: 3em !important;
 }
 </style>
