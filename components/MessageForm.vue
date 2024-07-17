@@ -49,7 +49,7 @@
   </div>
   <div class="flex justify-center my-24" v-if="!showForm">
     <h1 class="m-4 text-6xl formathead">
-      {{ "Thank you! I'll contact you shortly." }}
+      {{ "Thank you! We'll revert you shortly." }}
     </h1>
   </div>
 </template>
