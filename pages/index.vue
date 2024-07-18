@@ -15,14 +15,23 @@
         v-for="(slide, idx) in slides"
         :key="idx"
         :style="{ backgroundImage: `url(${slide.url})` }"
-        class="bg-center bg-fixed bg-cover bg-no-repeat customh min-w-screen bg-opacity-50 font-extrabold leading-tight text-9xl text-white underline"
+        class="bg-center bg-fixed bg-cover bg-no-repeat customh min-w-screen bg-opacity-50 font-extrabold leading-tight text-9xl text-white underline flex flex-col"
       >
-        {{ slide.quote }}
+        <div>{{ slide.quote }}</div>
+        <div>
+          <button
+            href="#"
+            class="w-auto px-4 py-2 mt-3 sha text-center text-white bg-red-500 rounded text-xl border-2 border-red-500 hover:text-red-500 hover:bg-white"
+          >
+            Explore <span class="inline-block align-middle"><rightarrow /></span>
+          </button>
+        </div>
       </SwiperSlide>
     </Swiper>
   </div>
 </template>
 <script setup>
+import rightarrow from "/components/icons/rightarrow.vue";
 const slides = [
   {
     url: "/dummy.png",
@@ -55,7 +64,7 @@ const slides = [
   text-align: center;
   padding: 0 40px;
   font-family: "Spectral", serif;
-  text-shadow: 2px 2px #FF0000;
+  text-shadow: 2px 2px #ff0000;
 }
 .swiper-wrapper {
   min-width: 100vh;
@@ -79,5 +88,8 @@ const slides = [
 }
 .customh {
   height: 87vh;
+}
+.sha {
+  text-shadow: 2px 2px #ff0000;
 }
 </style>
