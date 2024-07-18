@@ -1,11 +1,17 @@
 <template>
-  <NavBar />
-  <NuxtPage />
-  <Footer />
+  <NavBar @mobile-nav-open="mobilenavopen" />
+  <div v-show="!showNav">
+    <NuxtPage />
+  </div>
+  <Footer v-show="!showNav" />
 </template>
 <script setup lang="ts">
 import NavBar from "../NGO/components/Navbar.vue";
 import Footer from "../NGO/components/Footer.vue";
+const showNav = ref(false);
+function mobilenavopen(val = false) {
+  showNav.value = val;
+}
 useSeoMeta({
   title: "Asha Ki Kiran",
   ogTitle: "Asha Ki Kiran",

@@ -7,22 +7,22 @@
       >
         <a
           href="#"
-          class="block md:inline-block text-red-900 px-3 py-3 hover:border-b-4 border-red-500"
+          class="inline-block custom-red px-3 py-3 hover:border-b-4 border-red-500"
           >Home</a
         >
         <a
           href="#"
-          class="block md:inline-block text-red-900 px-3 py-3 hover:border-b-4 border-red-500"
+          class="inline-block custom-red px-3 py-3 hover:border-b-4 border-red-500"
           >About</a
         >
         <a
           href="#"
-          class="block md:inline-block text-red-900 px-3 py-3 hover:border-b-4 border-red-500"
+          class="inline-block custom-red px-3 py-3 hover:border-b-4 border-red-500"
           >Fundraising</a
         >
         <a
           href="#"
-          class="block md:inline-block text-red-900 px-3 py-3 hover:border-b-4 border-red-500"
+          class="inline-block custom-red px-3 py-3 hover:border-b-4 border-red-500"
           >Contact</a
         >
       </div>
@@ -51,15 +51,7 @@
         />
       </div>
     </nav>
-    <div
-      class="bg-white h-screen md:hidden w-full text-center font-extrabold mt-5 border-red-500 font-mono text-4xl"
-      v-if="showNav"
-    >
-      <a href="#" class="block text-red-900 px-3 py-6">Home</a>
-      <a href="#" class="block text-red-900 px-3 py-6">About</a>
-      <a href="#" class="block text-red-900 px-3 py-6">Fundraising</a>
-      <a href="#" class="block text-red-900 px-3 py-6">Contact</a>
-    </div>
+    <MobileNav v-if="showNav" />
   </div>
 </template>
 <script setup>
@@ -67,7 +59,15 @@ import { ref } from "vue";
 import sidebar from "/components/icons/sidebar.vue";
 import cross from "/components/icons/cross.vue";
 const showNav = ref(false);
+const emit = defineEmits();
 function toggleNav() {
   showNav.value = !showNav.value;
 }
+watch(
+  showNav,
+  (value) => {
+    emit("mobile-nav-open", value);
+  },
+  { deep: true, immediate: true }
+);
 </script>
