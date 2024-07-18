@@ -15,7 +15,7 @@
         v-for="(slide, idx) in slides"
         :key="idx"
         :style="{ backgroundImage: `url(${slide.url})` }"
-        class="bg-center bg-fixed bg-cover bg-no-repeat min-h-screen min-w-screen bg-opacity-50 font-mono font-extrabold leading-tight text-9xl text-white underline"
+        class="bg-center bg-fixed bg-cover bg-no-repeat customh min-w-screen bg-opacity-50 font-extrabold leading-tight text-9xl text-white underline"
       >
         {{ slide.quote }}
       </SwiperSlide>
@@ -24,6 +24,10 @@
 </template>
 <script setup>
 const slides = [
+  {
+    url: "/dummy.png",
+    quote: "Help Us Give a Voice to Every Child in Need",
+  },
   {
     url: "/BG-1.png",
     quote: "Join Hands with Us to Give Every Child a Better Tomorrow",
@@ -40,14 +44,6 @@ const slides = [
     url: "/BG-4.jpeg",
     quote: "Help Us Give a Voice to Every Child in Need",
   },
-  {
-    url: "/BG-5.jpeg",
-    quote: "Help Us Give a Voice to Every Child in Need",
-  },
-  {
-    url: "/dummy.png",
-    quote: "Help Us Give a Voice to Every Child in Need",
-  },
 ];
 </script>
 <style>
@@ -55,8 +51,11 @@ const slides = [
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
-  height: 100vh;
+  font-size: 40px;
+  text-align: center;
+  padding: 0 40px;
+  font-family: "Spectral", serif;
+  text-shadow: 2px 2px #FF0000;
 }
 .swiper-wrapper {
   min-width: 100vh;
@@ -77,5 +76,8 @@ const slides = [
 }
 .swiper-pagination-bullet-active {
   background-color: white !important;
+}
+.customh {
+  height: 87vh;
 }
 </style>
