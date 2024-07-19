@@ -23,12 +23,14 @@
             href="#"
             class="w-auto px-4 py-2 mt-3 sha text-center text-white bg-red-500 rounded text-xl border-2 border-red-500 hover:text-red-500 hover:bg-white"
           >
-            Explore <span class="inline-block align-middle"><rightarrow /></span>
+            Explore
+            <span class="inline-block align-middle"><rightarrow /></span>
           </button>
         </div>
       </SwiperSlide>
     </Swiper>
   </div>
+  <Aboutsection />
 </template>
 <script setup>
 import rightarrow from "/components/icons/rightarrow.vue";
