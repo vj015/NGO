@@ -3,7 +3,9 @@
     <Heading msg="Know About Us" />
     <div class="flex flex-col md:flex-row items-center justify-center">
       <img src="/BG-5.jpeg" class="w-full h-80 rounded m-4 p-1 md:m-2 md:p-0" />
-      <div class="flex flex-col items-center justify-center m-4 p-1 md:m-2 md:p-0">
+      <div
+        class="flex flex-col items-center justify-center m-4 p-1 md:m-2 md:p-0"
+      >
         <div class="font-mono text-xl m-auto">
           We are a compassionate team with a focus on building healthy
           communities, strengthening families, and creating opportunities for
@@ -18,7 +20,7 @@
         <div>
           <button
             href="#"
-            class="w-auto px-4 py-2 mt-3 sha text-center text-red-500 bg-red-200 rounded text-xl border-2 border-red-500 hover:text-red-500 hover:bg-white"
+            class="w-auto px-4 py-2 m-2 text-red-500 rounded font-mono text-xl border-2 border-red-500 hover:text-white hover:bg-red-500"
           >
             Know more
             <span class="inline-block align-middle"><IconsRightarrow /></span>
