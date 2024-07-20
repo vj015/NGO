@@ -2,27 +2,27 @@
   <div
     class="bg-white customh md:hidden w-full text-center font-extrabold border-red-500 font-mono text-4xl flex flex-col items-center justify-around flex-wrap"
   >
-    <div>
-      <a
-        href="#"
-        class="block custom-red px-3 pb-6 hover:underline hover:cursor-pointer"
-        >Home</a
+    <div class="flex flex-col">
+      <button
+        class="bg-transparent hover:bg-yellow-200 text-red-600 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"
       >
-      <a
-        href="#"
-        class="block custom-red px-3 py-6 hover:underline hover:cursor-pointer"
-        >About</a
+        Home
+      </button>
+      <button
+        class="bg-transparent hover:bg-yellow-200 text-red-600 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"
       >
-      <a
-        href="#"
-        class="block custom-red px-3 py-6 hover:underline hover:cursor-pointer"
-        >Fundraising</a
+        About
+      </button>
+      <button
+        class="bg-transparent hover:bg-yellow-200 text-red-600 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"
       >
-      <a
-        href="#"
-        class="block custom-red px-3 py-6 hover:underline hover:cursor-pointer"
-        >Contact</a
+        Campaigns
+      </button>
+      <button
+        class="bg-transparent hover:bg-yellow-200 text-red-600 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"
       >
+        Contact
+      </button>
     </div>
     <sociallinks class="" />
   </div>
@@ -30,5 +30,8 @@
 <style scoped>
 .customh {
   height: 87vh;
+}
+.sha {
+  text-shadow: 2px 2px #ff0000;
 }
 </style>
