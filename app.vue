@@ -3,6 +3,7 @@
   <div v-show="!showNav">
     <NuxtPage />
   </div>
+  <Donate v-show="!showNav" />
   <Footer v-show="!showNav" />
 </template>
 <script setup lang="ts">

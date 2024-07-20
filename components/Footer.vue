@@ -69,7 +69,7 @@ import MessageForm from "/components/MessageForm.vue";
 import sociallinks from "/components/sociallinks.vue";
 import copyright from "/components/icons/copyright.vue";
 </script>
-<style>
+<style scoped>
 .formathead {
   font-family: "Sacramento", cursive;
   text-transform: none;
