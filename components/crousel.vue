@@ -1,8 +1,8 @@
 <template>
-  <div class="md:hidden">
+  <div>
     <Swiper
       :modules="[SwiperAutoplay]"
-      :slides-per-view="1"
+      :slides-per-view="screenVal"
       :loop="true"
       :autoplay="{
         delay: 2000,
@@ -15,41 +15,22 @@
         >
           <img
             :src="slide.url"
-            alt="Product"
+            alt="Campaign"
             class="h-80 w-72 object-cover rounded-t-xl"
           />
           <div class="px-4 py-3 w-72 flex flex-col items-center">
-            <p class="text-lg font-serif text-red-500 block capitalize">
+            <p
+              class="text-xl mb-2 text-center font-semibold font-serif text-red-500 block capitalize"
+            >
               {{ slide.title }}
             </p>
-          </div>
-        </div>
-      </SwiperSlide>
-    </Swiper>
-  </div>
-  <div class="hidden md:block">
-    <Swiper
-      :modules="[SwiperAutoplay]"
-      :slides-per-view="3"
-      :loop="true"
-      :autoplay="{
-        delay: 2000,
-        disableOnInteraction: true,
-      }"
-    >
-      <SwiperSlide v-for="(slide, idx) in slides" :key="idx">
-        <div
-          class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
-        >
-          <img
-            :src="slide.url"
-            alt="Product"
-            class="h-80 w-72 object-cover rounded-t-xl"
-          />
-          <div class="px-4 py-3 w-72 flex flex-col items-center">
-            <p class="text-lg font-serif text-red-500 block capitalize">
-              {{ slide.title }}
-            </p>
+            <button
+              href="#"
+              class="w-auto px-4 py-2 m-2 text-red-500 rounded font-mono text-xl border-2 border-red-500 hover:text-white hover:bg-red-500"
+            >
+              Explore
+              <span class="inline-block align-middle"><IconsRightarrow /></span>
+            </button>
           </div>
         </div>
       </SwiperSlide>
@@ -57,46 +38,35 @@
   </div>
 </template>
 <script setup>
+import { toRefs } from "vue";
+
+let props = defineProps(["screenVal"]);
+const { screenVal } = toRefs(props);
 const slides = [
   {
-    url: "/fame4.png",
+    url: "/frame9.png",
     title: "Each One, Adapt One",
     content: "",
   },
   {
-    url: "/fame5.png",
+    url: "/fame6.png",
     title: "Let's Leave No Child Uneducated",
     content: "",
   },
   {
-    url: "/fame6.png",
+    url: "/fame5.png",
     title: "Waste to Wonder: Transforming Trash into Treasures",
     content: "",
   },
 ];
 </script>
-<style scoped>
+<style>
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
-  height: 70vh;
-  margin: 2px;
-  font-size: 4rem;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
 }
 .swiper-wrapper {
-  min-width: 100vh;
-  width: 100vh;
-}
-.swiper-cards {
-  width: 240px;
-  height: 240px;
-}
-.swiper-cards .swiper-slide {
-  border-radius: 6px;
-  border: 1px solid black;
+  padding: 15px 0 !important;
 }
 </style>
