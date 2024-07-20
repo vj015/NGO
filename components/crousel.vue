@@ -18,9 +18,9 @@
             alt="Product"
             class="h-80 w-72 object-cover rounded-t-xl"
           />
-          <div class="px-4 py-3 w-72">
-            <p class="text-lg font-bold text-black truncate block capitalize">
-              Product Name
+          <div class="px-4 py-3 w-72 flex flex-col items-center">
+            <p class="text-lg font-serif text-red-500 block capitalize">
+              {{ slide.title }}
             </p>
           </div>
         </div>
@@ -46,9 +46,9 @@
             alt="Product"
             class="h-80 w-72 object-cover rounded-t-xl"
           />
-          <div class="px-4 py-3 w-72">
-            <p class="text-lg font-bold text-black truncate block capitalize">
-              Product Name
+          <div class="px-4 py-3 w-72 flex flex-col items-center">
+            <p class="text-lg font-serif text-red-500 block capitalize">
+              {{ slide.title }}
             </p>
           </div>
         </div>
@@ -60,17 +60,17 @@
 const slides = [
   {
     url: "/fame4.png",
-    title: "Tree Plantation Drive",
+    title: "Each One, Adapt One",
     content: "",
   },
   {
     url: "/fame5.png",
-    title: "Blood Camp",
+    title: "Let's Leave No Child Uneducated",
     content: "",
   },
   {
     url: "/fame6.png",
-    title: "Health Care",
+    title: "Waste to Wonder: Transforming Trash into Treasures",
     content: "",
   },
 ];
@@ -81,7 +81,7 @@ const slides = [
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  height: 40vh;
+  height: 70vh;
   margin: 2px;
   font-size: 4rem;
   font-weight: bold;
