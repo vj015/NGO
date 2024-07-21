@@ -18,25 +18,25 @@
           >About</a
         >
         <a
-          href="#"
+          href="/team"
           class="inline-block custom-red px-3 py-3 hover:border-b-4 border-red-500"
           >Team</a
         >
         <a
-          href="#"
+          href="/contact"
           class="inline-block custom-red px-3 py-3 hover:border-b-4 border-red-500"
           >Contact</a
         >
       </div>
       <div class="flex flex-row items-center flex-wrap">
         <button
-          href="#"
+          href="/join-us"
           class="w-auto px-4 py-2 m-2 md:text-right text-red-500 rounded font-mono text-xs md:text-xl border-2 border-red-500 hover:text-white hover:bg-red-500"
         >
           Join us
         </button>
         <button
-          href="#"
+          href="/donate"
           class="w-auto px-4 py-2 m-2 md:text-right text-white bg-red-500 rounded font-mono text-xs md:text-xl border-2 border-red-500 hover:text-red-500 hover:bg-white"
         >
           Donate
@@ -53,7 +53,7 @@
         />
       </div>
     </nav>
-    <MobileNav v-if="showNav" />
+    <MobileNav @signal-nav="toggleNav()" v-if="showNav" />
   </div>
 </template>
 <script setup>
