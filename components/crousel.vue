@@ -18,7 +18,10 @@
             alt="Campaign"
             class="h-80 w-72 object-cover rounded-t-xl"
           />
-          <div class="px-4 py-3 w-72 flex flex-col items-center">
+          <div
+            class="px-4 py-3 w-72 flex flex-col items-center"
+            v-if="from === 'projects'"
+          >
             <p
               class="text-xl mb-2 text-center font-semibold font-serif text-red-500 block capitalize"
             >
@@ -40,25 +43,8 @@
 <script setup>
 import { toRefs } from "vue";
 
-let props = defineProps(["screenVal"]);
+let props = defineProps(["screenVal", "slides", "from"]);
 const { screenVal } = toRefs(props);
-const slides = [
-  {
-    url: "/frame9.png",
-    title: "Each One, Adapt One",
-    content: "",
-  },
-  {
-    url: "/fame6.png",
-    title: "Let's Leave No Child Uneducated",
-    content: "",
-  },
-  {
-    url: "/fame5.png",
-    title: "Waste to Wonder: Transforming Trash into Treasures",
-    content: "",
-  },
-];
 </script>
 <style>
 .swiper-slide {
