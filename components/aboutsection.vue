@@ -19,7 +19,7 @@
         </div>
         <div>
           <button
-            href="#"
+            @click="navigateTo('/about')"
             class="w-auto px-4 py-2 m-2 text-red-500 rounded font-mono text-xl border-2 border-red-500 hover:text-white hover:bg-red-500"
           >
             Know more
