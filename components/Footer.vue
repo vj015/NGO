@@ -22,7 +22,11 @@
         <p class="font-mono text-xl">
           {{
             "Asha ki Kiran Foundation is an award-winning organization working hard to address the issue of Child Education of BPL in India. "
-          }}<span class="inline-block custom-red">{{ "Read more...." }}</span>
+          }}<span
+            class="inline-block custom-red cursor-pointer"
+            @click="navigateTo('/about')"
+            >{{ "Read more...." }}</span
+          >
         </p>
       </div>
       <div class="flex flex-col items-center my-4">
