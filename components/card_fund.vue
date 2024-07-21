@@ -14,7 +14,7 @@
         {{ title }}
       </p>
       <button
-        href="#"
+        @click="btnClicked()"
         class="w-auto px-4 py-2 m-2 text-red-500 rounded font-mono text-xl border-2 border-red-500 hover:text-white hover:bg-red-500"
       >
         Explore
@@ -28,4 +28,8 @@ import { toRefs } from "vue";
 
 let props = defineProps(["urll", "title", "idx"]);
 const { urll, title, idx } = toRefs(props);
+async function btnClicked() {
+  console.log("Button clicked");
+  await navigateTo(`/campaigns/${idx.value}`);
+}
 </script>
