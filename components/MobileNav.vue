@@ -11,12 +11,12 @@
       <button
         class="bg-transparent hover:bg-yellow-200 text-red-600 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"
       >
-        About
+        About us
       </button>
       <button
         class="bg-transparent hover:bg-yellow-200 text-red-600 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"
       >
-        Campaigns
+        Meet our Team
       </button>
       <button
         class="bg-transparent hover:bg-yellow-200 text-red-600 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"

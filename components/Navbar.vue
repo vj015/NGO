@@ -1,24 +1,26 @@
 <template>
   <div>
-    <nav class="flex flex-wrap items-center justify-between md:px-5 bg-transparent w-full">
+    <nav
+      class="flex flex-wrap items-center justify-between md:px-5 bg-transparent w-full"
+    >
       <img src="/logo1.png" class="w-28" />
       <div
         class="hidden w-full md:w-auto md:flex text-right mt-5 md:mt-0 border-red-500 font-mono text-2xl"
       >
         <a
-          href="#"
+          href="/"
           class="inline-block custom-red px-3 py-3 hover:border-b-4 border-red-500"
           >Home</a
         >
         <a
-          href="#"
+          href="/about"
           class="inline-block custom-red px-3 py-3 hover:border-b-4 border-red-500"
           >About</a
         >
         <a
           href="#"
           class="inline-block custom-red px-3 py-3 hover:border-b-4 border-red-500"
-          >Fundraising</a
+          >Team</a
         >
         <a
           href="#"
