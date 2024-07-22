@@ -1,5 +1,5 @@
 <template>
-  <NavBar @mobile-nav-open="mobilenavopen" />
+  <Navbar @mobile-nav-open="mobilenavopen" />
   <div v-show="!showNav">
     <NuxtPage />
   </div>
@@ -10,8 +10,6 @@
 </template>
 <script setup lang="ts">
 const route = useRoute();
-import NavBar from "../NGO/components/Navbar.vue";
-import Footer from "../NGO/components/Footer.vue";
 const showNav = ref(false);
 function mobilenavopen(val = false) {
   showNav.value = val;
