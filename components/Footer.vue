@@ -38,13 +38,13 @@
         </p>
         <div class="flex flex-row items-center flex-wrap">
           <button
-            href="#"
+            @click="navigateTo('/join-us')"
             class="w-auto px-4 py-2 m-2 md:text-right text-red-500 rounded font-mono text-xs md:text-xl border-2 border-red-600 hover:text-white hover:bg-red-600"
           >
             Join us
           </button>
           <button
-            href="#"
+            @click="navigateTo('/donate')"
             class="w-auto px-4 py-2 m-2 md:text-right text-white bg-red-600 rounded font-mono text-xs md:text-xl border-2 border-red-600 hover:text-red-600 hover:bg-slate-900"
           >
             Donate

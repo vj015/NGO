@@ -23,11 +23,13 @@
       </div>
       <div class="flex flex-col md:flex-row items-center md:items-start m-5">
         <div class="md:w-1/2 text-left my-2 md:m-2">
+          <Heading msg="Mission!" />
           <p class="font-mono text-xl">
             {{ slides[route.params.id].objective }}
           </p>
         </div>
         <div class="md:w-1/2 text-left my-2 md:m-2">
+          <Heading msg="Vision!" />
           <p class="font-mono text-xl">
             {{ slides[route.params.id].conclusion }}
           </p>
@@ -38,7 +40,6 @@
 </template>
 <script setup>
 const route = useRoute();
-console.log(route.params.id);
 const slides = [
   {
     url: "/frame9.png",

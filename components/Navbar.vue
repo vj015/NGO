@@ -30,13 +30,13 @@
       </div>
       <div class="flex flex-row items-center flex-wrap">
         <button
-          href="/join-us"
+          @click="navigateTo('/join-us')"
           class="w-auto px-4 py-2 m-2 md:text-right text-red-500 rounded font-mono text-xs md:text-xl border-2 border-red-500 hover:text-white hover:bg-red-500"
         >
           Join us
         </button>
         <button
-          href="/donate"
+          @click="navigateTo('/donate')"
           class="w-auto px-4 py-2 m-2 md:text-right text-white bg-red-500 rounded font-mono text-xs md:text-xl border-2 border-red-500 hover:text-red-500 hover:bg-white"
         >
           Donate

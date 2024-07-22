@@ -3,10 +3,11 @@
   <div v-show="!showNav">
     <NuxtPage />
   </div>
-  <Donate v-show="!showNav" />
+  <Donate v-show="!showNav && route.name != 'donate'" />
   <Footer v-show="!showNav" />
 </template>
 <script setup lang="ts">
+const route = useRoute();
 import NavBar from "../NGO/components/Navbar.vue";
 import Footer from "../NGO/components/Footer.vue";
 const showNav = ref(false);
