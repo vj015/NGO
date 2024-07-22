@@ -12,7 +12,7 @@
     <a href="mailto:vjain2376@gmail.com" target="_blank"
       ><you class="w-10 h-10"
     /></a>
-    <a href="mailto:vjain2376@gmail.com" target="_blank"
+    <a href="https://vipuljain.in/" target="_blank"
       ><developer class="w-10 h-10"
     /></a>
   </div>
