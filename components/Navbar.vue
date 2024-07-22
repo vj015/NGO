@@ -30,12 +30,14 @@
       </div>
       <div class="flex flex-row items-center flex-wrap">
         <button
+          v-show="route.name != 'join-us'"
           @click="navigateTo('/join-us')"
           class="w-auto px-4 py-2 m-2 md:text-right text-red-500 rounded font-mono text-xs md:text-xl border-2 border-red-500 hover:text-white hover:bg-red-500"
         >
           Join us
         </button>
         <button
+          v-show="route.name != 'donate'"
           @click="navigateTo('/donate')"
           class="w-auto px-4 py-2 m-2 md:text-right text-white bg-red-500 rounded font-mono text-xs md:text-xl border-2 border-red-500 hover:text-red-500 hover:bg-white"
         >
@@ -61,6 +63,7 @@ import { ref } from "vue";
 import sidebar from "/components/icons/sidebar.vue";
 import cross from "/components/icons/cross.vue";
 const showNav = ref(false);
+const route = useRoute();
 const emit = defineEmits();
 function toggleNav() {
   showNav.value = !showNav.value;

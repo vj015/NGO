@@ -3,7 +3,9 @@
   <div v-show="!showNav">
     <NuxtPage />
   </div>
-  <Donate v-show="!showNav && route.name != 'donate'" />
+  <Donate
+    v-show="!showNav && !(route.name === 'donate' || route.name === 'join-us')"
+  />
   <Footer v-show="!showNav" />
 </template>
 <script setup lang="ts">

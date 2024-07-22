@@ -2,7 +2,10 @@
   <div
     class="max-h-full max-w-full bg-slate-900 text-slate-300 font-serif md:px-12 p-12 pb-0"
   >
-    <div class="max-w-4xl mx-auto flex flex-col items-center justify-center">
+    <div
+      class="max-w-4xl mx-auto flex flex-col items-center justify-center"
+      v-show="route.name != 'join-us'"
+    >
       <h1 class="text-2xl sm:text-4xl leading-tight font-mono">
         {{ "Send us a Message!" }}
       </h1>
@@ -38,12 +41,14 @@
         </p>
         <div class="flex flex-row items-center flex-wrap">
           <button
+            v-show="route.name != 'join-us'"
             @click="navigateTo('/join-us')"
             class="w-auto px-4 py-2 m-2 md:text-right text-red-500 rounded font-mono text-xs md:text-xl border-2 border-red-600 hover:text-white hover:bg-red-600"
           >
             Join us
           </button>
           <button
+            v-show="route.name != 'donate'"
             @click="navigateTo('/donate')"
             class="w-auto px-4 py-2 m-2 md:text-right text-white bg-red-600 rounded font-mono text-xs md:text-xl border-2 border-red-600 hover:text-red-600 hover:bg-slate-900"
           >
@@ -72,6 +77,7 @@
 import MessageForm from "/components/MessageForm.vue";
 import sociallinks from "/components/sociallinks.vue";
 import copyright from "/components/icons/copyright.vue";
+const route = useRoute();
 </script>
 <style scoped>
 .formathead {

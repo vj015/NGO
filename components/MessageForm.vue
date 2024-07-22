@@ -21,6 +21,23 @@
           </div>
         </div>
         <div class="mx-0 mb-1 sm:mb-4">
+          <div class="mx-0 mb-1 sm:mb-4">
+            <label
+              for="contact"
+              class="pb-1 text-xs uppercase tracking-wider"
+            ></label
+            ><input
+              type="text"
+              id="contact"
+              placeholder="Your contact"
+              class="mb-2 w-full rounded-md border border-slate-300 text-slate-900 py-2 pl-2 pr-4 shadow-md sm:mb-0"
+              name="contact"
+              required="true"
+              minlength="10"
+            />
+          </div>
+        </div>
+        <div class="mx-0 mb-1 sm:mb-4">
           <label
             for="textarea"
             class="pb-1 text-xs uppercase tracking-wider"
