@@ -4,7 +4,8 @@
     <div class="flex flex-col">
       <div class="flex flex-col md:flex-row items-center justify-center m-5">
         <div
-          class="md:w-1/2 text-center font-serif text-3xl mb-4 font-extrabold"
+          class="md:w-1/2 text-center text-red-300 font-serif text-3xl mb-4 font-extrabold bg-no-repeat bg-cover bg-center md:mr-2"
+          :style="{ backgroundImage: `url(${slides[route.params.id].url})` }"
         >
           {{ slides[route.params.id].title }}
         </div>
@@ -14,12 +15,8 @@
           </p>
         </div>
       </div>
-      <div class="flex flex-col items-center m-5">
-        <iframe
-          src="https://www.youtube.com/embed/bO0oHSqGfYA"
-          title="आशा की किरण कहानी"
-          class="w-full md:w-9/12 h-96"
-        ></iframe>
+      <div class="md:hidden flex flex-col items-center m-2">
+        <img :src="slides[route.params.id].url" alt="">
       </div>
       <div class="flex flex-col md:flex-row items-center md:items-start m-5">
         <div class="md:w-1/2 text-left my-2 md:m-2">
@@ -42,7 +39,7 @@
 const route = useRoute();
 const slides = [
   {
-    url: "/frame9.webp",
+    url: "/fame1.webp",
     title: "Each One, Adapt One",
     content:
       'The "Each One, Adopt One" campaign is an initiative aimed at fostering a sense of responsibility and community involvement by encouraging individuals to adopt and support the education of one underprivileged child. This campaign is grounded in the belief that everyone has the power to make a difference in someone elses life, and by providing educational opportunities, we can collectively uplift society.',
