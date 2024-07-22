@@ -21,6 +21,6 @@ useSeoMeta({
   ogTitle: "Asha Ki Kiran",
   description: "NGO which serves humanity and childcare",
   ogDescription: "NGO which serves humanity and childcare",
-  ogImage: "/logo.jpg",
+  ogImage: "/logo1.webp",
 });
 </script>

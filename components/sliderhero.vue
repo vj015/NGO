@@ -33,23 +33,23 @@
 import rightarrow from "/components/icons/rightarrow.vue";
 const slides = [
   {
-    url: "/dummy.png",
+    url: "/BG/dummy.webp",
     quote: "Help Us Give a Voice to Every Child in Need",
   },
   {
-    url: "/BG-1.png",
+    url: "/BG/BG-1.webp",
     quote: "Join Hands with Us to Give Every Child a Better Tomorrow",
   },
   {
-    url: "/BG-2.jpg",
+    url: "/BG/BG-2.webp",
     quote: "Empowering Children to Reach Their Full Potential",
   },
   {
-    url: "/BG-3.jpeg",
+    url: "/BG/BG-3.webp",
     quote: "Help Us Give a Voice to Every Child in Need",
   },
   {
-    url: "/BG-4.jpeg",
+    url: "/BG/BG-4.webp",
     quote: "Help Us Give a Voice to Every Child in Need",
   },
 ];

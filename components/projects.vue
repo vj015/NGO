@@ -13,17 +13,17 @@
 <script setup>
 const slides = [
   {
-    url: "/frame9.png",
+    url: "/frame9.webp",
     title: "Each One, Adapt One",
     content: "",
   },
   {
-    url: "/fame6.png",
+    url: "/fame6.webp",
     title: "Let's Leave No Child Uneducated",
     content: "",
   },
   {
-    url: "/fame5.png",
+    url: "/fame5.webp",
     title: "Waste to Wonder: Transforming Trash into Treasures",
     content: "",
   },

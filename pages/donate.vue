@@ -13,8 +13,8 @@
         </p>
       </div>
       <div class="flex md:flex-row flex-col items-center justify-center">
-        <img src="/qr.png" alt="Donate us" class="m-2">
-        <img src="/sbi.png" alt="Donate us" class="m-2">
+        <img src="/qr.webp" alt="Donate us" class="m-2" />
+        <img src="/sbi.webp" alt="Donate us" class="m-2" />
       </div>
     </div>
   </div>

@@ -42,7 +42,7 @@
 const route = useRoute();
 const slides = [
   {
-    url: "/frame9.png",
+    url: "/frame9.webp",
     title: "Each One, Adapt One",
     content:
       'The "Each One, Adopt One" campaign is an initiative aimed at fostering a sense of responsibility and community involvement by encouraging individuals to adopt and support the education of one underprivileged child. This campaign is grounded in the belief that everyone has the power to make a difference in someone elses life, and by providing educational opportunities, we can collectively uplift society.',
@@ -52,7 +52,7 @@ const slides = [
       'The "Each One, Adopt One" campaign by Asha Ki Kiran invites individuals or families to adopt a child by committing to a monthly donation of 200 Rs, supporting the childs education. Adopters receive regular updates and progress reports to ensure transparency and track the childs development. Additionally, a support system is in place to assist adopters with any challenges and provide necessary resources. This campaign aims to create a ripple effect, where each contribution significantly impacts a childs life, leading to a better-educated and empowered generation and ultimately contributing to the nations development.',
   },
   {
-    url: "/fame6.png",
+    url: "/fame6.webp",
     title: "Let's Leave No Child Uneducated",
     content:
       "In our ongoing commitment to ensuring that every child receives a quality education, we are thrilled to announce the Let's Leave No Child Uneducated campaign. This initiative focuses on distributing workbooks specifically designed for primary school children, addressing both their educational needs and personal development.",
@@ -62,7 +62,7 @@ const slides = [
       "**Why Workbooks?** Workbooks are an effective tool for reinforcing classroom learning, offering structured exercises that children can work on independently or with minimal supervision, making them perfect for supplementing school education. Additionally, these workbooks are designed to be engaging and interactive, encouraging children to take an active interest in their studies. **How You Can Help:** We invite individuals, organizations, and businesses to join us in this noble cause. Your support can come in various forms: financial contributions to fund the production and distribution of workbooks, volunteering to help with the distribution and conduct follow-up sessions to ensure children are benefiting from the materials, and raising awareness about the campaign through social media, community events, and personal networks. Together, we can make a significant impact on the lives of many children, providing them with the tools they need to build a brighter future. Let's come together and leave no child uneducated.",
   },
   {
-    url: "/fame5.png",
+    url: "/fame5.webp",
     title: "Waste to Wonder: Transforming Trash into Treasures",
     content:
       "At Asha Ki Kiran, we believe in turning challenges into opportunities. Our latest initiative, Waste to Wonder, embodies this philosophy by focusing on transforming plastic waste into beautiful, useful goods. This innovative campaign aims to address environmental issues while empowering underprivileged children through the art of crafting.",

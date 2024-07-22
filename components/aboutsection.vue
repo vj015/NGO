@@ -2,7 +2,7 @@
   <div class="m-4 border-2 border-red-200">
     <Heading msg="Know About Us" />
     <div class="flex flex-col md:flex-row items-center justify-center">
-      <img src="/BG-5.jpeg" class="w-full h-80 rounded m-4 p-1 md:m-2 md:p-0" />
+      <img src="/BG/BG-5.webp" class="w-full h-80 rounded m-4 p-1 md:m-2 md:p-0" />
       <div
         class="flex flex-col items-center justify-center m-4 p-1 md:m-2 md:p-0"
       >

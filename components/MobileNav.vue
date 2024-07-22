@@ -5,30 +5,30 @@
     <div class="flex flex-col">
       <button
         @click="handleredirect(1)"
-        class="bg-transparent hover:bg-yellow-200 text-red-600 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"
+        class="bg-transparent hover:bg-red-100 text-red-500 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"
       >
         Home
       </button>
       <button
         @click="handleredirect(2)"
-        class="bg-transparent hover:bg-yellow-200 text-red-600 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"
+        class="bg-transparent hover:bg-red-100 text-red-500 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"
       >
         About us
       </button>
       <button
         @click="handleredirect(3)"
-        class="bg-transparent hover:bg-yellow-200 text-red-600 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"
+        class="bg-transparent hover:bg-red-100 text-red-500 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"
       >
         Meet our Team
       </button>
       <button
         @click="handleredirect(4)"
-        class="bg-transparent hover:bg-yellow-200 text-red-600 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"
+        class="bg-transparent hover:bg-red-100 text-red-500 sha font-semibold hover:text-white py-2 px-4 border border-red-600 hover:border-red-600 rounded my-4"
       >
         Contact
       </button>
     </div>
-    <sociallinks class="" />
+    <sociallinks />
   </div>
 </template>
 <script setup>
