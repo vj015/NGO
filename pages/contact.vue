@@ -15,11 +15,15 @@
       >
         <div class="m-2">
           <p class="text-2xl font-semibold">{{ "Let's talk! " }}</p>
-          <p>{{ "+91-90765226926, +91-8601170114" }}</p>
+          <p>{{ "+91-9695175972, +91-9305786279" }}</p>
         </div>
         <div class="m-2">
           <p class="text-2xl font-semibold">{{ "Headoffice" }}</p>
-          <p>{{ "114 Krishna lane, Arya Nagar, Varanasi-231133" }}</p>
+          <p>
+            {{
+              "117/M/20 Naveen Nagar, Kakadev, Kanpur-208019, Uttar Pradesh, India"
+            }}
+          </p>
         </div>
         <div class="m-2">
           <sociallinks />

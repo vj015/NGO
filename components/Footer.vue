@@ -62,7 +62,7 @@
         </p>
         <p class="font-mono text-xl">
           {{
-            "201-202, Atlanta Centre, Sonawala Road, Goregaon East, Mumbai 400063, Maharashtra, India."
+            " 117/M/20 Naveen Nagar, Kakadev, Kanpur-208019, Uttar Pradesh, India"
           }}
         </p>
         <sociallinks class="md:w-4/12 my-4" />
