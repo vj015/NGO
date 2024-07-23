@@ -29,7 +29,7 @@
             ><input
               type="text"
               id="contact"
-              placeholder="Your contact"
+              placeholder="Your contact number"
               class="mb-2 w-full rounded-md border border-slate-300 text-slate-900 py-2 pl-2 pr-4 shadow-md sm:mb-0"
               name="contact"
               required="true"
@@ -76,7 +76,7 @@ const submit = async (e) => {
   e.preventDefault();
   showForm.value = false;
   await useFetch(
-    `https://docs.google.com/forms/u/0/d/e/1FAIpQLSdJ_JetHkMNYSpPyiWf2pcw0W4C7P5QUYWYGSVBvXc_UAs1aA/formResponse?&submit=Submit?usp=pp_url&entry.175308092=${e.target[0].value}&entry.332484750=${e.target[1].value}&entry.2094425495=${e.target[2].value}`,
+    `https://docs.google.com/forms/u/0/d/e/1FAIpQLSfgsAU3IHelrWb9snKrwWMboms9b1QLKn7NKEHxay0xXTqYGA/formResponse?&submit=Submit?usp=pp_url&entry.1414704764=${e.target[0].value}&entry.2001120088=${e.target[1].value}&entry.692623221=${e.target[2].value}`,
     {
       method: "POST",
     }
