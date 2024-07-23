@@ -19,7 +19,7 @@
       <div>{{ slide.quote }}</div>
       <div>
         <button
-          href="#"
+          @click="navigateTo('/about')"
           class="w-auto px-4 py-2 mt-3 sha text-center text-white bg-red-500 rounded text-xl border-2 border-red-500 hover:text-red-500 hover:bg-white"
         >
           Explore
@@ -46,11 +46,12 @@ const slides = [
   },
   {
     url: "/BG/BG-3.webp",
-    quote: "Help Us Give a Voice to Every Child in Need",
+    quote: "Together, Lets make a better world!",
   },
   {
     url: "/BG/BG-4.webp",
-    quote: "Help Us Give a Voice to Every Child in Need",
+    quote:
+      "Building a Brighter Future for Every Child: Join Us on the Journey!",
   },
 ];
 </script>
