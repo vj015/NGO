@@ -27,7 +27,7 @@
               class="pb-1 text-xs uppercase tracking-wider"
             ></label
             ><input
-              type="text"
+              type="tel"
               id="contact"
               placeholder="Your contact number"
               class="mb-2 w-full rounded-md border border-slate-300 text-slate-900 py-2 pl-2 pr-4 shadow-md sm:mb-0"

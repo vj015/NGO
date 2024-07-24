@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row gap-3">
-    <a href="https://wa.me/9305786279" target="_blank"
+    <a href="https://wa.me/919305786279" target="_blank"
       ><youtube class="w-10 h-10"
     /></a>
     <a href="mailto:ashakikiranfoundation05@gmail.com" target="_blank"
