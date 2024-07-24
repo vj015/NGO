@@ -14,7 +14,7 @@
 const slides = [
   {
     url: "/frame9.webp",
-    title: "Each One, Adapt One",
+    title: "Each One, Adopt One",
     content: "",
   },
   {
